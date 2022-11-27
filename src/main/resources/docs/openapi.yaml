@@ -1,0 +1,92 @@
+openapi: 3.0.3
+info:
+  title: Location Service - OpenAPI 3.0
+  description: |-
+    API Specification for Location Service
+  version: 0.0.1
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: https://0.0.0.0:8080
+paths:
+  /nearestStores:
+    get:
+      summary: Returns closest stores
+      description: This service returns closest stores and distances in meters for a given origin and limit.
+      parameters:
+        - name: origin
+          in: query
+          description: Longitude and Latitude of origin
+          required: true
+          schema:
+            type: string
+            title: LatitudeLongitudeLiteral
+            description: The path parameter accepts a list of latitude/longitude pairs. Latitude and longitude values should be separated by commas.
+            required:
+              - lat
+              - lng
+            properties:
+              lat:
+                type: number
+                description: Latitude in decimal degrees
+              lng:
+                type: number
+                description: Longitude in decimal degrees
+        - name: limit
+          in: query
+          description: Limit for number of closest stores
+          required: true
+          schema:
+            type: number
+            default: available
+              example:5
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                title: Store
+                description: An object describing a specific store information
+                example: {uuid: "", latitude : 51.778461, longitude : 4.615551, city : "'s Gravendeel", postalCode : "3295 BD", street: "Kerkstraat", street2 : "37", street3: "", addressName: "Jumbo 's Gravendeel Gravendeel Centrum", distanceInMeters: "2"}
+                required:
+                  - uuid
+                  - latitude
+                  - longitude
+                properties:
+                  uuid:
+                    type: number
+                    description: id
+                  latitude:
+                    type: number
+                    description: Latitude in decimal degrees
+                  longitude:
+                    type: number
+                    description: Longitude in decimal degrees
+                  city:
+                    type: string
+                    description: City
+                  postalCode:
+                    type: string
+                    description: Postal Code
+                  street:
+                    type: string
+                    description: Street
+                  street2:
+                    type: string
+                    description: Street2
+                  street3:
+                    type: string
+                    description: Street3
+                  addressName:
+                    type: string
+                    description: Address Name
+                  distanceInMeters:
+                    type: string
+                    description: Distance in meters
+        '400':
+          description: Invalid parameters
