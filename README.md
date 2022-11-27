@@ -2,8 +2,7 @@
 
 ### Setup
 
- - Download Amazon Corretto 17 from:[Amazon Corretto webpage](https://docs.aws.amazon.
-   com/corretto/latest/corretto-17-ug/downloads-list.html).
+ - Download Amazon Corretto 17 from [Amazon Corretto webpage](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)
  - Install Amazon Corretto 17
 
 ### Database
