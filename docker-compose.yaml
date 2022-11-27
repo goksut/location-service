@@ -1,0 +1,27 @@
+version: "2"
+
+services:
+  app:
+    image: 'location_service'
+    build:
+      context: .
+    container_name: app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
+      - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.spatial.dialect.postgis.PostgisDialect
+      - SPRING_DATASOURCE_HIKARI_INITIALIZATIONFAILTIMEOUT=0
+  postgres:
+    image: postgis/postgis:latest
+    ports:
+      - "5432:5432"
+    container_name: db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
