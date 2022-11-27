@@ -1,0 +1,62 @@
+[
+  {
+    "id": 169,
+    "addressName": "Jumbo Eindhoven Geldropseweg",
+    "distanceInMeters": "0",
+    "city": "Eindhoven",
+    "postalCode": "5611 SE",
+    "street": "Geldropseweg",
+    "street2": "103",
+    "street3": "",
+    "longitude": 5.490035,
+    "latitude": 51.433142
+  },
+  {
+    "id": 168,
+    "addressName": "Jumbo Eindhoven Boutenslaan",
+    "distanceInMeters": "1845.4946726",
+    "city": "Eindhoven",
+    "postalCode": "5615 KT",
+    "street": "Boutenslaan",
+    "street2": "56",
+    "street3": "",
+    "longitude": 5.465047,
+    "latitude": 51.427559
+  },
+  {
+    "id": 167,
+    "addressName": "Jumbo Eindhoven Boschdijk",
+    "distanceInMeters": "2644.3541799",
+    "city": "Eindhoven",
+    "postalCode": "5612 HD",
+    "street": "Boschdijk",
+    "street2": "289",
+    "street3": "",
+    "longitude": 5.464946,
+    "latitude": 51.451005
+  },
+  {
+    "id": 174,
+    "addressName": "Jumbo Eindhoven Pagelaan",
+    "distanceInMeters": "2834.58894597",
+    "city": "Eindhoven",
+    "postalCode": "5641 CB",
+    "street": "Pagelaan",
+    "street2": "9",
+    "street3": "",
+    "longitude": 5.517419,
+    "latitude": 51.452017
+  },
+  {
+    "id": 171,
+    "addressName": "Jumbo Eindhoven Kastelenplein",
+    "distanceInMeters": "3757.30208644",
+    "city": "Eindhoven",
+    "postalCode": "5653 LR",
+    "street": "Kastelenplein",
+    "street2": "86",
+    "street3": "",
+    "longitude": 5.440903,
+    "latitude": 51.419103
+  }
+]

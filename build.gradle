@@ -2,6 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '2.7.5'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id "io.freefair.lombok" version "6.4.1"
 }
 
 group = 'com.jumbo.store'
@@ -14,6 +15,12 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.postgresql:postgresql'
+	implementation 'org.hibernate:hibernate-spatial'
+	implementation 'com.graphhopper.external:jackson-datatype-jts:1.0-2.7'
+	implementation 'org.locationtech.jts:jts-core'
+	testImplementation "org.testcontainers:postgresql:1.17.6"
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
