@@ -2,7 +2,8 @@
 
 ### Setup
 
- - Download Amazon Corretto 17 from: Amazon Corretto webpage
+ - Download Amazon Corretto 17 from:[Amazon Corretto webpage](https://docs.aws.amazon.
+   com/corretto/latest/corretto-17-ug/downloads-list.html).
  - Install Amazon Corretto 17
 
 ### Database
@@ -56,7 +57,7 @@ It will start database and service.
 
 ### OpenAPI documentation
 
-It can be found in the [repository](src/main/resources/docs/openapi.yaml)
+It can be found in the [repository](src/main/resources/docs/openapi.yaml).
 
 ### Future Work
 - Missing tests
