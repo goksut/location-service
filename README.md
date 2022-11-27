@@ -1,11 +1,11 @@
 # location-service
 
-###Setup
+### Setup
 
  - Download Amazon Corretto 17 from: Amazon Corretto webpage
  - Install Amazon Corretto 17
 
-###Database
+### Database
 
 Run PostGIS Docker image 
 - Install Docker
@@ -38,7 +38,7 @@ If the build fails, try to clean it first:
 ./gradlew clean
 ```
 
-## Running the application locally
+### Running the application locally
 
 ```sh
 ./gradlew run
@@ -46,7 +46,7 @@ If the build fails, try to clean it first:
 
 Will get it executing on localhost:8080 by default.
 
-###Running the service and database with docker compose
+### Running the service and database with docker compose
 
 After building the project
 ```sh
@@ -54,14 +54,15 @@ docker compose up
 ```
 It will start database and service.
 
-###OpenAPI documentation
+### OpenAPI documentation
 
 It can be found in the [repository](src/main/resources/docs/openapi.yaml)
 
-###Future Work
+### Future Work
 - Missing tests
 - Integration of JaCoCo
 - Authentication and Authorization with JWT
 - Enabling profiles for different environments e.g. development, staging, production
+- Adding CircleCI pipeline
 
 
