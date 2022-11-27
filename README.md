@@ -19,6 +19,12 @@ docker pull postgis/postgis
 docker run -p 5432:5432 -e POSTGRES_PASSWORD=password -d postgis/postgis
 ```
 
+### Preparation
+Copy "stores.json" file to /src/main/resources/ directory
+
+```sh
+cp BASE_PATH/stores.json BASE_PATH/src/main/resources/
+```
 ### Build the project
 
 ```sh
